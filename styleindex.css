@@ -1,0 +1,94 @@
+/* PAGE DE STYLE POUR PAGE INDEX */
+
+img.fondecran {
+  /* le fond d'écran */
+  min-height: 100%;
+  min-width: 1024px;
+  /* redimensionnement proportionnel */
+  width: 100%;
+  height: auto;
+  /* Image en haut à gauche */
+  filter: blur(0.1rem); /* flou */
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+  /* responsive */
+  img.fondecran {
+    left: 50%;
+    margin-left: -512px; /* 50% */
+  }
+}
+
+img.textetitre {
+  width: 60%;
+  height: auto;
+  margin: auto;
+  display: block;
+  padding: 10px;
+}
+
+#presindex {
+  width: 60%;
+  margin: auto;
+  display: block;
+  border-radius: 5px;
+}
+
+#footerindex {
+  width: 60%;
+  margin: auto;
+  display: block;
+  text-align: center;
+  padding: 5%;
+  color: white;
+}
+
+#titreipm {
+  background: #848fa1;
+  text-align: center;
+  width: 60%;
+  padding: 4% 0 4% 0;
+  margin: auto;
+  display: block;
+  font-family: impact;
+  font-size: 1.5em;
+  color: #f2f2f2;
+}
+
+hr {
+  margin: 2% auto;
+  width: 30%;
+  height: 0.5px;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+/* changement de style des liens */
+a {
+  color: white;
+}
+a:visited {
+  color: #708090;
+}
+a:hover {
+  text-decoration: none;
+}
+
+/* le div pour l'image qui cache ce qui dépasse un height défini */
+#overflow {
+  width: 60%;
+  height: 250px;
+  overflow: hidden;
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+
+#welcimg {
+  max-width: 100%;
+}

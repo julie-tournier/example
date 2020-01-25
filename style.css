@@ -1,0 +1,414 @@
+/* CSS GENERAL */
+
+#sidebar
+/* barre de menu */
+ {
+  width: 100%; /* largeur */
+  background-color: #B0C4DE; /* la couleur de fond */
+  font-family: Avantgarde; /* la police */
+  font-size: 0.875em; /* taille de la police  */
+}
+#sidebar ul {
+  margin: 0; /* marge des quatres côtés */
+  padding: 16px 0; /* les quatres cotés d'un même element */
+  display: flex; /* boite flexible */
+  align-items: center; /* centre les elements */
+  justify-content: center; /* espace réparti entre les élements  */
+  flex-direction: row; /* défini les spécificités dans un conteneur  */
+  flex-wrap: wrap; /* éléments sur une ou plusieurs lignes */
+  list-style-type: none; /* defini l'aspect des puces */
+  text-align: center; /* alignement d'un bloc */
+} 
+#sidebar li {
+  padding: 0;
+  border-radius: 15px; /* coin arrondis */
+}
+#sidebar ul li a {
+  text-align: center;
+  padding-top: 10px; /* seulement le top de padding */
+  display: inline-block; /* modifie l'apparence d'un élément */
+  background-color: #b3c4db;
+  height: 30px;
+  width: 150px;
+  color: #3C4C59; /* couleur */
+  text-decoration: none; /* decore le texte : pas de décoration */
+  border-radius: 15px;
+}
+#sidebar li a {
+  display: block;
+  width: 100px;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 15px;
+}
+#sidebar ul li a:hover {
+  color: white;
+  background-color: #708099;
+  border-radius: 15px;
+}
+#sidebar li a:hover {
+  color: #FFD700;
+  border-radius: 15px;
+}
+#sidebar ul li ul {
+  display: none;
+  border-radius: 15px;
+}
+#sidebar ul li:hover ul /* survole */ {
+  display: block;
+  border-radius: 15px;
+}
+#sidebar li:hover ul li {
+  float: none; /* placement de l'élement */
+  border-radius: 15px;
+}
+#sidebar li ul {
+  position: absolute; /* position d'un élément, position absolu  */
+}
+#sidebar .current /* surligné sur la page actuelle */{
+  color: white;
+  background-color: #708099;
+}
+#sidebar a:visited {
+  color: #ffffff;
+}
+#sidebar a:focus {
+  border-bottom: 1px solid; /* bas de la bordure */
+  background-color: #BAE498; 
+}
+body {
+  display: block;
+  width: 80%;
+  font-size: 1em;
+  font-family: sans-serif; /* la police */
+  background-color: #ffffff;
+  margin: auto; 
+  text-align: center;
+}
+p {
+  font-family: georgia;
+  font-size: 1em;
+  text-align: justify;
+  padding: 2% 6% 0 6%;
+}
+/* les effets pour les éléments a */
+a {
+  color: black;
+}
+a:hover {
+  color: #b3c4dc;
+  text-decoration:none;
+}
+a:visited /* visité */ {
+  color: #708090;
+}
+#banner1 
+/* barre fin du site */
+ {
+  text-align: center;
+  display: block;
+  background-color: #708090;
+  height: 50px;
+  width: 100%;
+}
+#footer {
+  display: block;
+  margin: auto;
+  height: 40px;
+  width: 100%;
+  background: #F2F2F2;
+  text-align: center;
+  font-family: Avantgarde;
+  padding-top: 20px;
+  color: black;
+  font-size: 0.875em;
+}
+#header
+/* bande titre les ipm */
+ {
+  display: block;
+  background-color: #708090;
+  height: 15%;
+  padding: 35px;
+}
+/* div qui contient les éléments spécifiques */
+#introduction {
+  text-align: center;
+  line-height: 1.7em; /* la hauteur entre les lignes  */
+  padding: 40px 30px 40px 30px;
+  padding-bottom: 40px;
+  background-color: #f2f2f2;
+  height: auto;
+}
+/* id modifié plus tard avec javascript */
+#contact {
+  font-family: impact;
+  font-size: 1.5em;
+  text-align: center;
+} 
+img {
+  width: 600px;
+  height: 100px;
+}
+
+/* CSS PAGE CALENDRIER */
+
+/* élément iframe google calendrier */
+#calendar {
+  margin-right: auto;
+  margin-left: auto;
+  width: 620px;
+  height: 450px;
+}
+/* div qui contient iframe google calendrier */
+#googcal {
+  text-align: center;
+  text-indent: 2em;
+  line-height: 1.7em;
+  padding: 15px;
+  background-color: #f2f2f2;
+}
+
+/* CSS PAGE PRESENTATION */
+
+/* style de nos photos sur la page presentation */
+.selfie {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+} 
+/* mise en page de nos bios sur la page presentation */
+.tori,
+.laureen {
+  width: 40%;
+  padding: 15px;
+  margin: 15px auto;
+  display: block;
+  font-size: 0.875em;
+}
+.tori {
+  float: left;
+}
+.laureen {
+  float: right;
+} 
+#introductionpresentation {
+  padding: 20px 80px 150px 80px;
+  background-color: #f2f2f2;
+  height: 500px;
+}
+.important {
+  font-family: impact;
+  font-size: 1.5em;
+  color: #708090;
+  text-align: center;
+}
+
+/* CSS RESSOURCES IPM */
+
+img.ressourcesipm {
+  width: 30%;
+  height: auto;
+  margin: auto;
+  float: left;
+  padding: 10px 20px;
+}
+#introductionressources {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: #f2f2f2;
+  height: auto;
+}
+#video {
+  width: 560px;
+  height: 315px;
+}
+
+/* CSS RESSOURCES ADMIN */
+
+img.ressourcesadm {
+  width: 30%;
+  height: auto;
+  margin: auto;
+  float: right;
+  padding: 10px 20px;
+}
+#compte_a_rebours {
+  border-color: black; /* couleur des bordures */
+  width: 70%;
+  height: 2em;
+  padding-top: 5px;
+  margin: 0 auto;
+  margin-top: 5%;
+  background-color: #b3c4dc;
+  text-align: center;
+  font-family: georgia;
+  border-style: double; /* double bordure  */
+  border-bottom: 0px; /* pas de bordure en bas */
+  box-shadow: 1px 0 2px black; /* ombre */
+}
+img.dossier {
+  display: block;
+  margin: auto;
+  width: 10%;
+  height: auto;
+  padding: 5px;
+}
+
+/* CSS PAGE CONTACT */
+
+#introductioncontact {
+  padding: 20px 80px 150px 80px;
+  background-color: #f2f2f2;
+  height: 400px;
+}
+#map {
+  width: 90%;
+  border: 0;
+  text-align: center;
+  border: outset; /* effet 3D */
+  margin: 25px 0 25px 0; /* top, right, bottom, left */
+}
+#left {
+  width: 40%;
+  height: auto;
+  float: left;
+  display: block;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+#right {
+  width: 60%;
+  height: auto;
+  float: right;
+  display: block;
+  margin: 0 auto;
+}
+table.cal_calendrier {
+  margin: auto;
+}
+/* élément javascript calendrier */
+.cal_calendrier {
+  border: 1px solid black;
+  padding: 1px;
+  background-color: #FFFFFF;
+  font-family: georgia;
+  font-size: 0.875em;
+}
+.cal_calendrier th {
+  border: 1px solid black;
+  background-color: #ffffff;
+}
+.cal_calendrier td {
+  border: 1px solid black;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+.cal_aujourdhui {
+  color: #ff0000;
+}
+.cal_jours_av_ap {
+  color: #5a779e;
+} 
+/* change les couleurs de jours de la semaine */
+td.cal_jours_semaine {
+  background-color: #aaffbb;
+} 
+.calendrier {
+  background-color: #f2f2f2;
+  padding: 1% 0 3% 0;
+}
+.normal {
+  text-align: left;
+  margin: auto;
+  padding: 0px;
+}
+.normal.espace {
+  padding-top: 120px;
+}
+
+/* PAGE ACCUEIL */
+
+#clock {
+  background-color: #73808e;
+  width: 50px;
+  color: white;
+  text-align: center;
+}
+img.photoaccueil {
+  width: 50%;
+  height: 300px;
+  float: left;
+  padding: 1% 5% 2% 5%;
+  background-color: #f2f2f2;
+}
+#ecriture {
+  font-family: georgia;
+  padding: 5% 5% 10% 5%;
+  text-align: justify;
+  background-color: #f2f2f2;
+  font-size: 0.875em;
+}
+#obj {
+  background-color: #b3c4dc;
+  width: 270px;
+  height: auto;
+  text-align: center;
+  font-family: georgia;
+  color: black;
+  display: block;
+  margin: auto;
+}
+
+/* MENTIONS LEGALES : */
+
+#mentions {
+  text-align: left;
+  font-family: georgia;
+  padding: 0.5% 20% 4% 20%;
+  background-color: #f2f2f2;
+}
+#cc {
+  width: 15%;
+  height: 75px;
+}
+
+/* RESSOURCES : */
+
+.petite {
+  width : 40%;
+  height: auto;
+} 
+.ressources1 {
+  padding: 5px 15px;
+  margin: 30px 20px 30px 50px;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 12px;
+  background-color: #73808f;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  box-shadow: 1px 1px 0px 0px rgba(255, 255, 255, 0.25); /* ombre de la boite */
+  background: linear-gradient(#9da2a8, #73808f, #5e6369); /* degradé de couleur */
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5); /* ombre du texte */
+}
+.ressources1 a:hover {
+  background: linear-gradient(to top, #b3c4dc 0%, #73808f 100%);
+}
+.ressources1 a:active /* activé */ {
+  opacity: 0.8;
+}
+.ressources1 li a:hover {
+  color: #ffffff;
+}
+.ressources1 a:hover {
+  color: #ffffff;
+}
+.ressources1 a {
+  color: #ffffff;
+}
+
+
+

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--pour coder en html-->
+
+<html lang="fr">
+  <!--pour lire le code html-->
+
+  <head>
+    <!--précise les informations d'entête utilisées-->
+
+    <meta charset="utf-8" />
+    <!--précise les caractères utilisées-->
+
+    <title>IPM Lille</title>
+    <!--c'est le titre de la page-->
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!--rattache le code html au code css-->
+    <script src="/contact.js"></script>
+    <!--pour le calendrier il faut que le script soit là avant le code plus tard !-->
+  </head>
+
+  <body>
+
+    <div id="header">
+      <a href="accueil.html">
+        <img src="https://zupimages.net/up/19/44/3pmh.png" alt="banière ipm"
+      /></a>
+    </div>
+
+    <div id="sidebar">
+      <!--menu-->
+
+      <ul>
+        <li><a href="accueil.html">ACCUEIL</a></li>
+        <li><a href="calendrier.html">CALENDRIER</a></li>
+        <li>
+          <a href="ressources.html">RESSOURCES</a>
+
+          <ul class="sous">
+            <li><a href="administration.html">Administrative</a></li>
+            <li><a href="ipm.html">IPM</a></li>
+          </ul>
+        </li>
+        <li><a href="presentation.html">QUI SOMMES-NOUS ?</a></li>
+        <li><a class="current" href="contact.html">CONTACT</a></li>
+        <!--lien entre la page layout et la page contact-->
+      </ul>
+    </div>
+
+    <div id="introductioncontact">
+      <!--maintenant on peut ajouter le contenu spécifique de la page-->
+      <h1 id="contact">
+        Restons en contact
+      </h1>
+
+      <div id="left">
+        <p class="normal">
+          Digital Learning Managers - IPM Lille
+        </p>
+        <p class="normal">
+          B6
+        </p>
+        <p class="normal">
+          59650 Villeneuve d'Ascq
+        </p>
+        <p class="normal">
+          03.62.26.88.02
+        </p>
+         <p class="normal">
+        IPM.Lille@gmail.com        
+        </p>
+        <p class="normal">
+          <a
+            href="mailto:someone@example.com?Subject=Hello%20again"
+            target="_top"
+            >Nous envoyer un email</a
+          >   <!--permet d'envoyer des mails directement en cliquant dessus-->
+ 
+        </p>
+        <p class="normal espace">
+          Nous sommes ouvert tous les jours de la semaine, de 9h à 18h.
+        </p>
+      </div>
+      <div id="right">
+        <p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1266.0941233084056!2d3.132360758171467!3d50.60503949717274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d65014e85e3f%3A0x752dbbd5ff233c5a!2sB6%2C%2059650%20Villeneuve-d&#39;Ascq!5e0!3m2!1sen!2sfr!4v1573296438868!5m2!1sen!2sfr"
+            id="map"
+            allowfullscreen=""
+          ></iframe>
+          <!--iframe de google map, permet de rattacher un plan-->
+        </p>
+        <div class="calendrier">
+          <script>
+            calendrier();
+          </script>
+         <!--rattache le calendrier présent dans le javascript-->
+
+        </div>
+      </div>
+    </div>
+
+    <div id="banner1"></div>
+
+    <div id="footer">
+      © 2019 Laureen et Tori.
+      <a href="mentionslegales.html">Mentions légales.</a>
+    </div>
+    <script src="/contact-hover.js"></script>
+    <!--rattache le code html au code javascript-->
+
+  </body>
+  <!--le corps du document, c'est ce que l'utilisateur va voir-->
+</html>

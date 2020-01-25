@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--pour coder en html-->
+
+<html lang="fr">
+  <!--pour lire le code html-->
+
+  <head>
+    <!--précise les informations d'enquête utilisées-->
+
+    <meta charset="utf-8" />
+    <!--précise les caractères utilisées-->
+
+    <title>IPM Lille</title>
+    <!--c'est le titre de la page-->
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!--rattache le code html au code css-->
+
+  </head>
+
+  <body>
+    
+    <div id="header">
+     <a href="accueil.html"> <img src="https://zupimages.net/up/19/44/3pmh.png" alt="banière ipm" /></a>
+    </div>
+
+    <div id="sidebar">
+      <!--menu-->
+
+      <ul>
+        <li><a href="accueil.html">ACCUEIL</a></li>
+        <li><a class="current" href="calendrier.html">CALENDRIER</a></li>
+        <li>
+          <a href="ressources.html">RESSOURCES</a>
+
+          <ul class="sous">
+            <li><a href="administration.html">Administrative</a></li>
+            <li><a href="ipm.html">IPM</a></li>
+          </ul>
+        </li>
+        <li><a href="presentation.html">QUI SOMMES-NOUS ?</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <!--lien entre la page layout et la page contact-->
+      </ul>
+    </div>
+
+    <div id="googcal">
+      <!--maintenant on peut ajouter le contenu spécifique de la page-->
+      <h1 id="contact">Emploi du temps :</h1>
+      <iframe
+        id="calendar"
+        src="https://calendar.google.com/calendar/embed?height=450&amp;wkst=2&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FParis&amp;src=ZW1haWwud20uZWR1X3FkZDlsc2RmM3BpaXJrbGk2N2FmaWxuYjFnQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=OTRuMzFwdDQ5b2lvMTIyOWo3OHBjZzNkaTRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23DD4477&amp;color=%23402175&amp;showPrint=0&amp;hl=fr&amp;showTitle=0"
+      ></iframe> <!--iframe de google calendar, permet de mettre le calendrier-->
+    </div>
+
+    <div id="banner1"></div>
+
+    <div id="footer">
+      © 2019 Laureen et Tori.
+      <a href="mentionslegales.html">Mentions légales.</a>
+    </div>
+        <script src="/contact-hover.js"></script>
+        <script src="/script.js"></script>
+
+  </body>
+  <!--le corps du document, c'est ce que l'utilisateur va voir-->
+</html>

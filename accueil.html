@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--pour coder en html-->
+
+<html lang="fr">
+  <!--pour lire le code html-->
+
+  <head>
+    <!--précise les informations d'entête utilisées-->
+
+    <meta charset="utf-8" />
+    <!--précise les caractères utilisées-->
+
+    <title>IPM Lille</title>
+    <!--c'est le titre de la page-->
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!--rattache le code css au code html-->
+    <script src="/script.js"></script>
+    <!--rattache le code javascript au code html-->
+
+  </head>
+
+  <body onload="UpdateClock()" onunload="KillClock()"> 
+    <!--execute lorsque la page se charge-->
+
+    <div id="header">
+      <a href="accueil.html">
+        <img src="https://zupimages.net/up/19/44/3pmh.png" alt="banière ipm"
+      /></a>     <!--rattache une image et un lien-->
+
+    </div>
+
+    <div id="sidebar">
+      <!--menu-->
+
+      <ul>
+        <li><a class="current" href="accueil.html">ACCUEIL</a></li>
+        <li><a href="calendrier.html">CALENDRIER</a></li>
+        <li>
+          <a href="ressources.html">RESSOURCES</a>
+
+          <ul class="sous">  <!--rattache les menus et les sous-menus-->
+            <li><a href="administration.html">Administrative</a></li>
+            <li><a href="ipm.html">IPM</a></li>
+          </ul>
+        </li>
+        <li><a href="presentation.html">QUI SOMMES-NOUS ?</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <!--lien entre la page layout et la page contact-->
+      </ul>
+    </div>
+
+    <div id="introduction">
+      <!--maintenant on peut ajouter le contenu spécifique de la page-->
+      <div id="obj" onmouseover="mOver(this)" onmouseout="mOut(this)"> 
+        <!--permet de spécifier l'objet modifié au survole-->
+        Survolez moi
+      </div>
+      <p>
+        Bienvenue sur notre espace destiné aux Digital Learning Managers de
+        Lille. Pour ceux qui sont encore étudiant en master, nous vous proposons
+        un site qui réunit votre planning du master ainsi que plusieurs
+        ressources administratives et humaines, telles que les retours
+        d'expérience des anciens étudiants. Cet espace vous donne les moyens
+        d'agrandir votre réseautage IPM ! Pour ceux qui sont dans le monde du
+        travail, ce site vous apporte des ressources qui contribuent à votre
+        veille numérique, les contacts des anciens et nouveaux IPMs et un aperçu
+        de comment le master évolue.
+      </p>
+      <p>
+        Ce produit est la communauté de pratique, le knowledge management, de la
+        communauté IPM de l'université de Lille.
+      </p>
+    </div>
+    <img
+      src="https://zupimages.net/up/19/45/07jp.png"
+      id="photoaccueil"
+      class="photoaccueil"
+      alt="photoaccueil"
+    />
+          <!--photo de notre page d'accueil-->
+
+
+    <div id="ecriture">
+      Le master prépare des Digital Learning Managers, chefs de projet dans le
+      domaine de la e-Formation, "plate-forme de formation, e-learning, rapid
+      learning, serious game, enseignement mobile ou pervasif, enseignement
+      extrême" sont les objets numériques abordés par le master. L'option
+      recherche du master prépare quant à elle a une professionalisation vers
+      les metiers de la recherche en e-formation (entrée en thèse, assistant
+      recherche). Le master bénéficie ainsi de plus de 30 ans d'existence, et a
+      su mettre en oeuvre de nombreuses évolutions pour coller sans cesse à la
+      demande du marché qui est actuellement très forte (la majorité de nos
+      étudiants obtiennent un CDD ou un CDI avant la fin de la formation...).
+      <button onclick="myFunction()">Agrandir la taille de la police !</button>     
+      <!--boutton pour agrandir le taille de la police au click, rattaché à javascript-->
+
+    </div>
+
+    <div id="banner1">
+      <table>
+        <tr>
+          <td>
+            <form name="theClock"> <!--l'horloge-->
+              <input id="clock" type="text" name="theTime" />
+            </form>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+        
+
+    <div id="footer"> <!--pied de page-->
+      © 2019 Laureen et Tori.
+      <a href="mentionslegales.html">Mentions légales.</a>  <!--lien-->
+
+    </div>
+  </body>
+  <!--le corps du document, c'est ce que l'utilisateur va voir-->
+</html>
